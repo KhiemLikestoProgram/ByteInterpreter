@@ -30,7 +30,7 @@ for tok in IN:
     isalpha = True
   elif check(tok[2:],'01') and tok[:2] == "s'":
     char.append(tok[2:])
-  else: print('Invalid value.')
+  else: print("Invalid value.")
 
 if not isnumer:
   char = [chr(int(i,2)) for i in char]
